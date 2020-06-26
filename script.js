@@ -11,9 +11,9 @@ let player = document.getElementById('player');
 let computer = document.getElementById('computer');
 let outcome = document.getElementById('outcome');
 
-let Rock = document.getElementById('Rock').addEventListener('click', play);
-let Paper = document.getElementById('Paper').addEventListener('click', play);
-let Scissors = document.getElementById('Scissors').addEventListener('click', play);
+let diamond = document.getElementById('diamond').addEventListener('click', play);
+let paper = document.getElementById('paper').addEventListener('click', play);
+let swords = document.getElementById('swords').addEventListener('click', play);
 
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
@@ -31,11 +31,11 @@ function play() {
 function computerInput() {
     var dice = Math.random();
     if (dice <= 0.34) {
-        return computerChoice = "Rock";
+        return computerChoice = "diamond";
     } else if (dice > 0.34 && dice <= 0.60) {
-       return computerChoice = "Paper";
+       return computerChoice = "paper";
     } else {
-        return computerChoice = "Scissors";
+        return computerChoice = "swords";
     }
 }
 
@@ -56,22 +56,22 @@ function compare() {
 
     if (playerChoice === computerChoice) {
         outcome.innerHTML = "Nobody wins " + username + "!";
-    } else if (playerChoice === "Rock" && computerChoice === "Paper") {
+    } else if (playerChoice === "diamond" && computerChoice === "paper") {
         outcome.innerHTML = "Crap! " + username +  " You lost!";
         return lost;
-    } else if (playerChoice === "Rock" && computerChoice === "Scissors") {
+    } else if (playerChoice === "diamond" && computerChoice === "swords") {
         outcome.innerHTML = username + " you won! Hooray!";
         return won;
-    } else if (playerChoice === "Paper" && computerChoice === "Rock") {
+    } else if (playerChoice === "paper" && computerChoice === "diamond") {
         outcome.innerHTML = "Well done! " + username;
         return won;
-    } else if (playerChoice === "Paper" && computerChoice === "Scissors") {
+    } else if (playerChoice === "paper" && computerChoice === "sword") {
         outcome.innerHTML = "Defeated! " + username + "!";
         return lost;
-    } else if (playerChoice === "Scissors" && computerChoice === "Rock") {
+    } else if (playerChoice === "swords" && computerChoice === "sword") {
         outcome.innerHTML = "Oh noooo " +  username + " you lost!";
         return lost;
-    } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
+    } else if (playerChoice === "swords" && computerChoice === "paper") {
         outcome.innerHTML = "KING! You won!";
         return won;
     }

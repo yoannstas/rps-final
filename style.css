@@ -13,7 +13,7 @@ header {
     border-radius: 10px;
 }
 
-#Rock {
+#diamond {
     color: transparent;
     background-image: url("assets/rock.png");
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ header {
     margin: 50px;
 }
 
-#Paper {
+#paper {
     color: transparent;
     background-image: url("assets/paper.png");
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ header {
     margin: 50px;
 }
 
-#Scissors {
+#swords {
     color: transparent;
     background-image: url("assets/scissors.png");
     background-repeat: no-repeat;
