@@ -45,6 +45,7 @@ header {
     background-color: transparent;
     margin: 50px;
 }
+
 h1 {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -158,4 +159,10 @@ hr {
     color: darksalmon;
     border-color: darksalmon;
     border-style: dashed;
+}
+
+.p {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+
 }
